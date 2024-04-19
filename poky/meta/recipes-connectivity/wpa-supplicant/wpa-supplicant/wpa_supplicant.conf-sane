@@ -1,0 +1,9 @@
+ctrl_interface=/var/run/wpa_supplicant
+ctrl_interface_group=0
+update_config=1
+
+network={
+        ssid="TP-Link_Dual"
+	#psk="4060485vpL"
+	psk=9dff22ee66e728f5448700e407588bc13d242ad9b632f3e60d1498db1e21ea36
+}

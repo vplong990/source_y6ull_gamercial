@@ -1,0 +1,8 @@
+[Unit]
+Description=Wifi setup
+
+[Service]
+ExecStart=/etc/init.d/setup-wifi.sh
+
+[Install]
+WantedBy=multi-user.target
