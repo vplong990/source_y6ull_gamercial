@@ -50,9 +50,10 @@ IMAGE_INSTALL += " \
     qtmqtt \
     wireguard-tools \
     libusb1 \
+    v4l-utils \
 "
 
-IMAGE_INSTALL_append = " v4l-utils alsa-utils cups openssh-sftp openssh-sftp-server autowifi"
+IMAGE_INSTALL_append = " alsa-utils cups openssh-sftp openssh-sftp-server autowifi"
 
 
 #TOOLCHAIN_TARGET_TASK += " \
