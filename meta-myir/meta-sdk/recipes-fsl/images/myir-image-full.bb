@@ -55,6 +55,9 @@ IMAGE_INSTALL += " \
     cups \
     openssh-sftp \
     openssh-sftp-server \
+    curl \
+    modemmanager \
+    networkmanager \
 "
 
 IMAGE_INSTALL_append = " autowifi"
