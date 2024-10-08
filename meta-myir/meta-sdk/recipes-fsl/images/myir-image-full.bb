@@ -58,7 +58,7 @@ IMAGE_INSTALL += " \
     curl \
     modemmanager \
     networkmanager \
-    util-linux-libuuid
+    util-linux-libuuid \
 "
 
 IMAGE_INSTALL_append = " autowifi"
