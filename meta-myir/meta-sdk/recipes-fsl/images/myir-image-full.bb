@@ -59,6 +59,7 @@ IMAGE_INSTALL += " \
     modemmanager \
     networkmanager \
     util-linux-libuuid \
+    ppp \
 "
 
 IMAGE_INSTALL_append = " autowifi"
