@@ -18,7 +18,7 @@ PE = "1"
 #"
 #SRCREV = "ad7247c8820b36396cd34331dc40e8cd60aabef0"
 
-UBOOT_SRC = "git:////home/test/MYD-Y6ULX-devel/04_Sources/myir-imx-uboot;protocol=file"
+UBOOT_SRC = "git:///home/gamercial/MYD-Y6ULX-devel/04_Sources/myir-imx-uboot;protocol=file"
 SRCBRANCH = "develop_2020.04"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH} \
 "

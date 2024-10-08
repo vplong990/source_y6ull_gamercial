@@ -1,4 +1,4 @@
-# Copyright (C) 2013-2016 Freescale Semiconductor
+#Copyright (C) 2013-2016 Freescale Semiconductor
 # Copyright 2017-2021 NXP
 # Released under the MIT license (see COPYING.MIT for the terms)
 
@@ -13,23 +13,19 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 DEPENDS += "lzop-native bc-native"
 
 #SRCBRANCH = "develop_lf-5.10.y"
-SRCBRANCH = "main"
-LOCALVERSION = "-1.0.0"
 
-#KERNEL_SRC ?= "git://github.com/MYiR-Dev/myir-imx-linux.git;protocol=https" 
-KERNEL_SRC = "git:///home/test/MYD-Y6ULX-devel/04_Sources/myir-imx-kernel;protocol=file"
-#KERNEL_SRC = "git:////${HOME}/MYD-Y6ULX-devel/04_Sources/source-kernel;protocol=file"
-
-SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
-#SRC_URI = "file:///home/test/MYD-Y6ULX-devel/04_Sources/myir-imx-kernel;protocol=file"
-#SRCREV = "39269585072b1c5b860f64ca87560ea293d267d9"
-SRCREV = "${AUTOREV}"
-
-#KERNEL_BRANCH ?= "6ull-kernel5.10.9"
 #LOCALVERSION = "-1.0.0"
-#KERNEL_SRC ?= "git://github.com/123markhong/6ullkernel-test.git;protocol=https"
-#SRC_URI = "${KERNEL_SRC};branch=${KERNEL_BRANCH}"
-#SRCREV = "062cea228859fa734f7930ce7eabcb95f4f1ed57"
+#KERNEL_SRC ?= "git:///home/gamercial/MYD-Y6ULX-devel/04_Sources/myir-imx-kernel;protocol=file"
+#SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
+#SRCREV = "${AUTOREV}"
+
+#Local GIT
+KERNEL_BRANCH = "y6ull-5.10.9"
+LOCALVERSION = "-1.0.0"
+SRCBRANCH = "origin"
+KERNEL_SRC = "git:///home/gamercial/MYD-Y6ULX-devel/04_Sources/myir-imx-linux;protocol=file"
+SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
+SRCREV = "983c649e94e46ff97a13d9d1e41d22e7cb43d622"
 
 LINUX_VERSION = "5.10.9"
 
