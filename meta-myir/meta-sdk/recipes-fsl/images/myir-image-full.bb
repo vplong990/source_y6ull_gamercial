@@ -60,9 +60,9 @@ IMAGE_INSTALL += " \
     networkmanager \
     util-linux-libuuid \
     ppp \
-    libnma \
     networkmanager-nmtui \
     networkmanager-bash-completion \
+    networkmanager-nmcli \
 "
 
 IMAGE_INSTALL_append = " autowifi"
