@@ -44,7 +44,7 @@ DO_CONFIG_V7_COPY_mx8 = "no"
 
 # Add setting for LF Mainline build
 #IMX_KERNEL_CONFIG_AARCH32 = "myd_y6ulx_defconfig"
-IMX_KERNEL_CONFIG_AARCH32 = "gamercial1.0_defconfig"
+IMX_KERNEL_CONFIG_AARCH32 = "gamercial1.1_defconfig"
 #IMX_KERNEL_CONFIG_AARCH64 ?= "imx_v8_defconfig"
 KBUILD_DEFCONFIG ?= ""
 KBUILD_DEFCONFIG_mx6= "${IMX_KERNEL_CONFIG_AARCH32}"
