@@ -158,7 +158,12 @@ echo >> conf/local.conf
 echo "# Switch to Debian packaging and include package-management in the image" >> conf/local.conf
 echo "PACKAGE_CLASSES = \"package_deb\"" >> conf/local.conf
 echo "EXTRA_IMAGE_FEATURES += \"package-management\"" >> conf/local.conf
+echo "NETWORK_MANAGER = \"networkmanager\"" >> conf/local.conf
+echo "IMAGE_FEATURES_remove += \"splash\"" >> conf/local.conf
+echo "PACKAGECONFIG_remove = \"networkd\"" >> conf/local.conf
+
 # echo "IMAGE_INSTALL += \"autowifi\"" >> conf/local.conf
+
 
 if [ ! -e $BUILD_DIR/conf/bblayers.conf.org ]; then
     cp $BUILD_DIR/conf/bblayers.conf $BUILD_DIR/conf/bblayers.conf.org

@@ -25,8 +25,8 @@ LOCALVERSION = "-1.0.0"
 SRCBRANCH = "origin"
 KERNEL_SRC = "git:///home/gamercial/MYD-Y6ULX-devel/04_Sources/myir-imx-linux;protocol=file"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
-SRCREV = "983c649e94e46ff97a13d9d1e41d22e7cb43d622"
-
+#SRCREV = "983c649e94e46ff97a13d9d1e41d22e7cb43d622"
+SRCREV = "${AUTOREV}"
 LINUX_VERSION = "5.10.9"
 
 FILES_${KERNEL_PACKAGE_NAME}-base += "${nonarch_base_libdir}/modules/${KERNEL_VERSION}/modules.builtin.modinfo "
@@ -44,7 +44,7 @@ DO_CONFIG_V7_COPY_mx8 = "no"
 
 # Add setting for LF Mainline build
 #IMX_KERNEL_CONFIG_AARCH32 = "myd_y6ulx_defconfig"
-IMX_KERNEL_CONFIG_AARCH32 = "gamercial_defconfig"
+IMX_KERNEL_CONFIG_AARCH32 = "gamercial1.0_defconfig"
 #IMX_KERNEL_CONFIG_AARCH64 ?= "imx_v8_defconfig"
 KBUILD_DEFCONFIG ?= ""
 KBUILD_DEFCONFIG_mx6= "${IMX_KERNEL_CONFIG_AARCH32}"

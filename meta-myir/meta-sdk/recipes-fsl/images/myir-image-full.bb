@@ -63,9 +63,10 @@ IMAGE_INSTALL += " \
     networkmanager-nmtui \
     networkmanager-bash-completion \
     networkmanager-nmcli \
+    libqmi \
 "
 
-IMAGE_INSTALL_append = " autowifi"
+IMAGE_INSTALL_append = " autowifi sml750"
 
 #CHANGE_PASSWORD
 INHERIT += "extrausers"
