@@ -66,7 +66,7 @@ IMAGE_INSTALL_append = " autowifi sml750"
 
 #CHANGE_PASSWORD
 INHERIT += "extrausers"
-EXTRA_USERS_PARAMS= "usermod -P gamercial root"
+EXTRA_USERS_PARAMS= "usermod -P gamercial root;"
 
 #TOOLCHAIN_TARGET_TASK += " \
 #    ${ML_STATICDEV} \
