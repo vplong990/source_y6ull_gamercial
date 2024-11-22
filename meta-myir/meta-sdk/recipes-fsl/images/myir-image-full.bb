@@ -42,9 +42,7 @@ IMAGE_INSTALL += " \
     iperf3 \
     proftpd \
     packagegroup-imx-core-tools \
-    qtsvg \
-    qtvirtualkeyboard \
-    qtmultimedia \
+    qtsvg \    
     qtquickcontrols2 \
     qtquickcontrols \
     qtmqtt \
@@ -56,14 +54,12 @@ IMAGE_INSTALL += " \
     openssh-sftp \
     openssh-sftp-server \
     curl \
-    modemmanager \
     networkmanager \
     util-linux-libuuid \
     ppp \
     networkmanager-nmtui \
     networkmanager-bash-completion \
-    networkmanager-nmcli \
-    libqmi \
+    networkmanager-nmcli \  
 "
 
 IMAGE_INSTALL_append = " autowifi sml750"
@@ -82,3 +78,7 @@ EXTRA_USERS_PARAMS= "usermod -P gamercial root"
 #tslib-tests
 #myir-linux-examples \
 #qt-demo
+#qtvirtualkeyboard \
+#qtmultimedia \
+#modemmanager \
+#libqmi \
