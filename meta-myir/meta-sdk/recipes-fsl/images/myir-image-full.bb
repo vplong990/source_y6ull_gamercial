@@ -57,7 +57,8 @@ IMAGE_INSTALL += " \
     networkmanager \
     util-linux-libuuid \
     ppp \
-    libqmi \    
+    libqmi \
+    htop \    
 "
 
 IMAGE_INSTALL_append = " autowifi sml750"
