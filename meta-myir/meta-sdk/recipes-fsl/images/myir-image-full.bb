@@ -60,8 +60,7 @@ IMAGE_INSTALL += " \
     networkmanager-nmtui \
     networkmanager-bash-completion \
     networkmanager-nmcli \
-    libqmi \
-      
+    libqmi \    
 "
 
 IMAGE_INSTALL_append = " autowifi sml750"
