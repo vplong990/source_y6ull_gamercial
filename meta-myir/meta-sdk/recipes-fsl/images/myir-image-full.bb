@@ -57,9 +57,6 @@ IMAGE_INSTALL += " \
     networkmanager \
     util-linux-libuuid \
     ppp \
-    networkmanager-nmtui \
-    networkmanager-bash-completion \
-    networkmanager-nmcli \
     libqmi \    
 "
 
@@ -82,3 +79,6 @@ EXTRA_USERS_PARAMS= "usermod -P gamercial root;"
 #qtvirtualkeyboard \
 #qtmultimedia \
 #modemmanager \
+#networkmanager-nmtui \
+#networkmanager-bash-completion \
+#networkmanager-nmcli \
