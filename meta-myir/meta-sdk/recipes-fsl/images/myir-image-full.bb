@@ -61,7 +61,7 @@ IMAGE_INSTALL += " \
     networkmanager-bash-completion \
     networkmanager-nmcli \
     libqmi \
-    modemmanager \  
+      
 "
 
 IMAGE_INSTALL_append = " autowifi sml750"
@@ -82,3 +82,4 @@ EXTRA_USERS_PARAMS= "usermod -P gamercial root;"
 #qt-demo
 #qtvirtualkeyboard \
 #qtmultimedia \
+#modemmanager \
