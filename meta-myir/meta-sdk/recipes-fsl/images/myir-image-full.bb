@@ -53,8 +53,7 @@ IMAGE_INSTALL += " \
     cups \
     openssh-sftp \
     openssh-sftp-server \
-    curl \
-    networkmanager \
+    curl \  
     util-linux-libuuid \
     ppp \
     libqmi \
@@ -83,3 +82,4 @@ EXTRA_USERS_PARAMS= "usermod -P gamercial root;"
 #networkmanager-nmtui \
 #networkmanager-bash-completion \
 #networkmanager-nmcli \
+#networkmanager \
