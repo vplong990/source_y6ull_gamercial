@@ -7,8 +7,9 @@ do_install() {
     install -d ${D}/usr/bin
     install -m 0644 ${WORKDIR}/tailscale.combined ${D}/usr/bin
     
-    lnr ${D}/usr/lib/tailscale.combined ${D}/usr/lib/tailscale
-    lnr ${D}/usr/lib/tailscale.combined ${D}/usr/lib/tailscaled
+    cd ${D}/usr/bin
+    ln -s /usr/bin/tailscale.combined tailscale
+    ln -s /usr/bin/tailscale.combined tailscaled
 }
 
 FILES_${PN} += "/usr/bin/tailscale.combined"
