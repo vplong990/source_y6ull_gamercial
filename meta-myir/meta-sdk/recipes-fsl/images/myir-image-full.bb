@@ -60,7 +60,7 @@ IMAGE_INSTALL += " \
     htop \    
 "
 
-IMAGE_INSTALL_append = " autowifi sml750 tailscale_vpn"
+IMAGE_INSTALL_append = " autowifi sml750 tailscale-vpn"
 
 #CHANGE_PASSWORD
 INHERIT += "extrausers"
