@@ -26,19 +26,15 @@ OPENCV_PKGS_imxgpu = " \
     python3-opencv \
 "
 
-IMAGE_INSTALL += " \
-    ${OPENCV_PKGS} \
-    ${ML_PKGS} \
+IMAGE_INSTALL += " \        
     python3 \
-    start-service \
-    ppp-quectel \
+    start-service \    
     libgpiod \
     libgpiod-tools \
     firmware-brcm43362 \
     can-utils \
     sqlite3 \
     u-boot-fw-utils \
-    quectel-cm \
     iperf3 \
     proftpd \
     packagegroup-imx-core-tools \
@@ -46,21 +42,17 @@ IMAGE_INSTALL += " \
     qtquickcontrols2 \
     qtquickcontrols \
     qtmqtt \
-    wireguard-tools \
-    libusb1 \
+    wireguard-tools \    
     v4l-utils \
-    alsa-utils \
-    cups \
+    alsa-utils \   
     openssh-sftp \
     openssh-sftp-server \
-    curl \  
-    util-linux-libuuid \
-    ppp \
-    libqmi \
-    htop \    
+    networkmanager \
+    networkmanager-nmtui \
+    networkmanager-nmcli \  
 "
 
-IMAGE_INSTALL_append = " autowifi sml750 tailscale-vpn"
+#IMAGE_INSTALL_append = " autowifi"
 
 #CHANGE_PASSWORD
 INHERIT += "extrausers"
@@ -69,7 +61,9 @@ EXTRA_USERS_PARAMS= "usermod -P gamercial root;"
 #TOOLCHAIN_TARGET_TASK += " \
 #    ${ML_STATICDEV} \
 #"
-
+#-----package-removes--------
+#${ML_PKGS} \
+#${OPENCV_PKGS} \
 #tslib 
 #tslib-calibrate 
 #tslib-conf 
@@ -83,3 +77,15 @@ EXTRA_USERS_PARAMS= "usermod -P gamercial root;"
 #networkmanager-bash-completion \
 #networkmanager-nmcli \
 #networkmanager \
+#curl \
+#util-linux-libuuid \
+#cups \ 
+#libusb1 \
+#tailscale-vpn \
+#-----4G packages-------
+#ppp-quectel \
+#quectel-cm \
+#libqmi \
+#ppp \
+#htop \
+#sml750 \
