@@ -49,7 +49,8 @@ IMAGE_INSTALL += " \
     openssh-sftp-server \
     networkmanager \
     networkmanager-nmtui \
-    networkmanager-nmcli \  
+    networkmanager-nmcli \
+    python-pyserial \  
 "
 
 #IMAGE_INSTALL_append = " autowifi"
@@ -82,6 +83,7 @@ EXTRA_USERS_PARAMS= "usermod -P gamercial root;"
 #cups \ 
 #libusb1 \
 #tailscale-vpn \
+ffmpeg \
 #-----4G packages-------
 #ppp-quectel \
 #quectel-cm \
