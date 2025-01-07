@@ -53,7 +53,7 @@ IMAGE_INSTALL += " \
     python-pyserial \  
 "
 
-#IMAGE_INSTALL_append = " autowifi"
+IMAGE_INSTALL_append = " rs485-test"
 
 #CHANGE_PASSWORD
 INHERIT += "extrausers"
