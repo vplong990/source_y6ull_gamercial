@@ -83,7 +83,7 @@ EXTRA_USERS_PARAMS= "usermod -P gamercial root;"
 #cups \ 
 #libusb1 \
 #tailscale-vpn \
-ffmpeg \
+#ffmpeg \
 #-----4G packages-------
 #ppp-quectel \
 #quectel-cm \
