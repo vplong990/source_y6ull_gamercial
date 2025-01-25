@@ -56,8 +56,13 @@ IMAGE_INSTALL += " \
 IMAGE_INSTALL_append = " rs485-test"
 
 #CHANGE_PASSWORD
-INHERIT += "extrausers"
-EXTRA_USERS_PARAMS= "usermod -P gamercial root;"
+#INHERIT += "extrausers"
+#EXTRA_USERS_PARAMS= "usermod -P gamercial root;"
+
+inherit extrausers
+EXTRA_USERS_PARAMS = "\
+    usermod -p 'gamercial' root; \
+    "
 
 #TOOLCHAIN_TARGET_TASK += " \
 #    ${ML_STATICDEV} \
