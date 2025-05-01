@@ -50,6 +50,7 @@ IMAGE_INSTALL += " \
     networkmanager \
     networkmanager-nmtui \
     networkmanager-nmcli \
+    python-pyserial \
     libmodbus \
 "
 
