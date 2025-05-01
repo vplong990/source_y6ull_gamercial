@@ -52,6 +52,7 @@ IMAGE_INSTALL += " \
     networkmanager-nmcli \
     python-pyserial \
     libmodbus \
+    liblightmodbus \
 "
 
 IMAGE_INSTALL_append = " tailscale-vpn sml750"
