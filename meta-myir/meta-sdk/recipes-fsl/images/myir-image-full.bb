@@ -19,12 +19,12 @@ ML_PKGS_mx8mnlite          = ""
 ML_STATICDEV_mx8mnlite     = ""
 
 # Add opencv for i.MX GPU
-OPENCV_PKGS       ?= ""
-OPENCV_PKGS_imxgpu = " \
-    opencv-apps \
-    opencv-samples \
-    python3-opencv \
-"
+#OPENCV_PKGS       ?= ""
+#OPENCV_PKGS_imxgpu = " \
+#    opencv-apps \
+#    opencv-samples \
+#    python3-opencv \
+#"
 
 IMAGE_INSTALL += " \        
     python3 \
@@ -50,19 +50,13 @@ IMAGE_INSTALL += " \
     networkmanager \
     networkmanager-nmtui \
     networkmanager-nmcli \
-    python-pyserial \  
+    libmodbus \
 "
 
-IMAGE_INSTALL_append = " rs485-test"
+IMAGE_INSTALL_append = " tailscale-vpn sml750"
 
-#CHANGE_PASSWORD
-#INHERIT += "extrausers"
-#EXTRA_USERS_PARAMS= "usermod -P gamercial root;"
-
-inherit extrausers
-EXTRA_USERS_PARAMS = "\
-    usermod -p 'gamercial' root; \
-    "
+#Option packages
+#rs485-test
 
 #TOOLCHAIN_TARGET_TASK += " \
 #    ${ML_STATICDEV} \
@@ -96,3 +90,5 @@ EXTRA_USERS_PARAMS = "\
 #ppp \
 #htop \
 #sml750 \
+#python-pyserial \
+#libmodbus
