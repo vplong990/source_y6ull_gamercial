@@ -52,10 +52,14 @@ IMAGE_INSTALL += " \
     networkmanager-nmcli \
     python-pyserial \
     libmodbus \
-    liblightmodbus \
+    python3-smbus \
+    python-smbus \
+    android-tools \
+    qtserialport \
+    python3-pip \
 "
 
-IMAGE_INSTALL_append = " tailscale-vpn sml750"
+IMAGE_INSTALL_append = " tailscale-vpn sml750 python3-pymodbus python3-smbus2"
 
 #Option packages
 #rs485-test
