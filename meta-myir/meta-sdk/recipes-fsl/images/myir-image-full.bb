@@ -47,20 +47,14 @@ IMAGE_INSTALL += " \
     v4l-utils \
     alsa-utils \   
     openssh-sftp \
-    openssh-sftp-server \
-    networkmanager \
-    networkmanager-nmtui \
-    networkmanager-nmcli \
-    libmodbus \   
+    openssh-sftp-server \      
     android-tools \  
     python3-pip \
-    python-pyserial \  
-    python3-paho-mqtt \   
-    python3-smbus2 \
+    python-pyserial \          
     python3-pymodbus \
 "
 
-IMAGE_INSTALL_append = " tailscale-vpn sml750"
+#IMAGE_INSTALL_append = " tailscale-vpn sml750"
 
 #Option packages
 #rs485-test
