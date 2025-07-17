@@ -31,8 +31,7 @@ IMAGE_INSTALL += " \
     start-service \    
     libgpiod \
     libgpiod-tools \
-    firmware-brcm43362 \
-    can-utils \
+    firmware-brcm43362 \ 
     sqlite3 \
     u-boot-fw-utils \
     iperf3 \
@@ -52,6 +51,9 @@ IMAGE_INSTALL += " \
     python3-pip \
     python-pyserial \          
     python3-pymodbus \
+    networkmanager-nmtui \
+    networkmanager-bash-completion \
+    networkmanager-nmcli \
 "
 
 #IMAGE_INSTALL_append = " tailscale-vpn sml750"
@@ -84,6 +86,7 @@ IMAGE_INSTALL += " \
 #libusb1 \
 #tailscale-vpn \
 #ffmpeg \
+#can-utils \
 #-----4G packages-------
 #ppp-quectel \
 #quectel-cm \
