@@ -41,22 +41,20 @@ IMAGE_INSTALL += " \
     qtquickcontrols2 \
     qtquickcontrols \
     qtmqtt \
-    qtserialport \
-    wireguard-tools \    
+    qtserialport \     
     v4l-utils \
     alsa-utils \   
     openssh-sftp \
     openssh-sftp-server \      
-    android-tools \  
-    python3-pip \
-    python-pyserial \          
-    python3-pymodbus \
+    android-tools \   
     networkmanager-nmtui \
-    networkmanager-bash-completion \
     networkmanager-nmcli \
+    tzdata \
+    python-pyserial \
+    python3-pymodbus
 "
 
-#IMAGE_INSTALL_append = " tailscale-vpn sml750"
+#IMAGE_INSTALL_append = " tailscale-vpn"
 
 #Option packages
 #rs485-test
@@ -87,6 +85,7 @@ IMAGE_INSTALL += " \
 #tailscale-vpn \
 #ffmpeg \
 #can-utils \
+#wireguard-tools \ 
 #-----4G packages-------
 #ppp-quectel \
 #quectel-cm \
@@ -95,12 +94,13 @@ IMAGE_INSTALL += " \
 #htop \
 #sml750 \
 #-----python packages-------
-#python-pyserial 
+#c 
 #python3-smbus2
 #python3-pymodbus
 #python-smbus
 #python3-smbus
-#python-pip  
+#python-pip
+#python3-pip \
 #-----C packages-------
 #libmodbus
 
